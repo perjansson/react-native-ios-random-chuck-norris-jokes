@@ -9,7 +9,8 @@
   "dependencies": {
     "html-entities": "^1.2.0",
     "react": "15.3.2",
-    "react-native": "0.36.0"
+    "react-native": "0.36.0",
+    "react-native-shake-event-ios": "^1.0.3"
   },
   "jest": {
     "preset": "jest-react-native"

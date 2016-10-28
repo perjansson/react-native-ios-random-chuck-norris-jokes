@@ -1,8 +1,14 @@
 import React from 'react'
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native'
 
 export default Joke = (props) => {
-  return <View style={styles.jokeContainer}><Text style={styles.joke}>{props.text}</Text></View>
+  return (
+    <TouchableOpacity onPress={props.onTouch}>
+      <View style={styles.jokeContainer}>
+        <Text style={styles.joke}>{props.text}</Text>
+      </View>
+    </TouchableOpacity>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -13,7 +19,7 @@ const styles = StyleSheet.create({
     borderRadius: 2
   },
   joke: {
-    fontSize: 28,
+    fontSize: 24,
     textAlign: 'center',
     fontFamily: 'Gill Sans'
   }
