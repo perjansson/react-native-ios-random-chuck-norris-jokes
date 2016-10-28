@@ -13,13 +13,13 @@ export default Joke = (props) => {
 
 const styles = StyleSheet.create({
   jokeContainer: {
-    margin: 20,
-    padding: 10,
+    margin: 25,
+    padding: 15,
     backgroundColor: 'rgba(255, 255, 255, 0.6)',
     borderRadius: 2
   },
   joke: {
-    fontSize: 24,
+    fontSize: 32,
     textAlign: 'center',
     fontFamily: 'Gill Sans'
   }
